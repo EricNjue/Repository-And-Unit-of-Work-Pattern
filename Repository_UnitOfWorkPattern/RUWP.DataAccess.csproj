@@ -67,7 +67,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BooksDBModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="BooksRepository.cs" />
     <Compile Include="BooksRepositoryEn.cs" />
     <Compile Include="IBooksRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

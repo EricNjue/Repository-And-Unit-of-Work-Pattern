@@ -16,7 +16,7 @@ namespace Repository_UnitOfWorkPattern
         public UnitOfWork()
         {
             entities = new BooksDBEntities();
-            BooksRepository = new BooksRepository();
+            BooksRepository = new BooksRepositoryEn(entities);
         }
 
         // This will be created from test project and passed on to the

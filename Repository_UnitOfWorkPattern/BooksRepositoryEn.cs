@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repository_UnitOfWorkPattern
 {
-    public class BooksRepositoryEn
+    public class BooksRepositoryEn : IBooksRepository
     {
         BooksDBEntities entities = null;
 
