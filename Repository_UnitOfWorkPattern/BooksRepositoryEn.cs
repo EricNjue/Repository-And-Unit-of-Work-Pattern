@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Repository_UnitOfWorkPattern
 {
-    public class BooksRepository : IBooksRepository, IDisposable
+    public class BooksRepositoryEn
     {
-        BooksDBEntities entities = new BooksDBEntities();
+        BooksDBEntities entities = null;
 
-        #region IBooksRepository Members
-
-        public BooksRepository()
+        public BooksRepositoryEn(BooksDBEntities entities)
         {
-            entities = new BooksDBEntities();
+            this.entities = entities;
         }
+
 
         public void AddBook(Book book)
         {
@@ -47,29 +46,5 @@ namespace Repository_UnitOfWorkPattern
             Book b = GetBookById(id);
             b = book;
         }
-
-        #endregion
-
-        #region IDisposable Members
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-
-        protected virtual void Dispose(bool disposing)
-        {
-            if (disposing == true)
-            {
-                entities = null;
-            }
-        }
-
-        ~BooksRepository()
-        {
-            Dispose(false);
-        }
-        #endregion
     }
 }
