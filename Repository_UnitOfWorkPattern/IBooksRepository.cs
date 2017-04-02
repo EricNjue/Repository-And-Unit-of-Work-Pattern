@@ -8,5 +8,11 @@ namespace Repository_UnitOfWorkPattern
 {
     public interface IBooksRepository
     {
+        List<Book> GetAllBooks();
+        Book GetBookById(int id);
+        void AddBook(Book book);
+        void UpdateBook(int id, Book book);
+        void DeleteBook(Book book);
+        void Save();
     }
 }

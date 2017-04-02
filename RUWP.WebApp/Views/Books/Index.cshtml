@@ -1,4 +1,5 @@
-﻿
+﻿@using Repository_UnitOfWorkPattern
+@model List<Book>
 @{
     Layout = null;
 }
@@ -11,7 +12,31 @@
     <title>Index</title>
 </head>
 <body>
-    <div> 
+    <div>
+        <table border="1" cellpadding="2" cellspacing="2">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>BookName</td>
+                    <td>AuthorName</td>
+                    <td>ISBN</td>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var book in Model)
+                    {
+                        <tr>
+                            <td>@book.ID </td>
+                            <td> @book.BookName</td>
+                            <td> @book.AuthorName</td>
+                            <td>@book.ISBN </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
