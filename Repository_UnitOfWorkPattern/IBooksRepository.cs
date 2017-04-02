@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repository_UnitOfWorkPattern
 {
-    public class Class1
+    public interface IBooksRepository
     {
     }
 }
