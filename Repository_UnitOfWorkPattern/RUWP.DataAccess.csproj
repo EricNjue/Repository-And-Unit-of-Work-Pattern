@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="BooksRepositoryEn.cs" />
     <Compile Include="IBooksRepository.cs" />
+    <Compile Include="MockBooksRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>

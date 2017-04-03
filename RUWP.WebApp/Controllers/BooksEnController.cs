@@ -23,7 +23,7 @@ namespace RUWP.WebApp.Controllers
 
         // GET: BooksEn
         public ActionResult Index()
-        {
+        {           
             List<Book> books = unitOfWork.BooksRepository.GetAllBooks();
             return View(books);
         }
