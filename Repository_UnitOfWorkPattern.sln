@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RUWP.DataAccess", "Reposito
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RUWP.WebApp", "RUWP.WebApp\RUWP.WebApp.csproj", "{35640DC2-F226-4E0F-9422-B5785A5DAC76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RUWP.Tests", "RUWP.Tests\RUWP.Tests.csproj", "{88D923C5-73A6-4BD2-8FA2-E3F2F1A6C5E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{35640DC2-F226-4E0F-9422-B5785A5DAC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35640DC2-F226-4E0F-9422-B5785A5DAC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35640DC2-F226-4E0F-9422-B5785A5DAC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D923C5-73A6-4BD2-8FA2-E3F2F1A6C5E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D923C5-73A6-4BD2-8FA2-E3F2F1A6C5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D923C5-73A6-4BD2-8FA2-E3F2F1A6C5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D923C5-73A6-4BD2-8FA2-E3F2F1A6C5E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
